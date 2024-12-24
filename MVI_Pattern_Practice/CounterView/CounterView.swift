@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CounterView<Model: CounterModelStateProtocol, Intent: CounterIntentProtocol>: View {
-    @ObservedObject var container: Container<Model, Intent>
+    @ObservedObject private var container: Container<Model, Intent>
     
     init(container: Container<Model, Intent>) {
         self.container = container
