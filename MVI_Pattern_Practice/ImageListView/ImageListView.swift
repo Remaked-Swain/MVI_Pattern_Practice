@@ -109,8 +109,14 @@ struct ImageListView<Model: ImageListModelStateProtocol, Intent: ImageListIntent
                 }
             }
             
-            Text(image.author)
-                .font(.headline)
+            HStack {
+                Text(image.author)
+                    .font(.headline)
+                
+                Spacer()
+                
+                LikesView<LikesModel, LikesIntent>.build()
+            }
         }
     }
     
