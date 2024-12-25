@@ -8,7 +8,7 @@
 import Foundation
 
 struct ImageEntity: Decodable {
-    let id: Int
+    let id: String
     let author: String
     let width: Double
     let height: Double

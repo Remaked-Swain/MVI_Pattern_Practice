@@ -74,6 +74,7 @@ struct ImageListView<Model: ImageListModelStateProtocol, Intent: ImageListIntent
                             }
                         }
                     }
+                    .padding()
                 default:
                     unavailableView()
                 }
@@ -102,6 +103,7 @@ struct ImageListView<Model: ImageListModelStateProtocol, Intent: ImageListIntent
                 case .success(let image):
                     image
                         .resizable()
+                        .scaledToFit()
                 default:
                     Image(systemName: "xmark")
                 }

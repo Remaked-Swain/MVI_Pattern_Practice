@@ -26,6 +26,7 @@ final class ImageListIntent {
     ) {
         self.model = model
         self.networkService = networkService
+        subscribe()
     }
     
     private func subscribe() {
