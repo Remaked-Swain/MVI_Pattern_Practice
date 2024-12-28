@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ImageListView<ImageListModel, ImageListIntent>.build()
+        NavigationStack {
+            RandomVendingMachineView<RandomVendingMachineModel, RandomVendingMachineIntent>.build()
+        }
     }
 }
 
